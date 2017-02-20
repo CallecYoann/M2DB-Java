@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.afpa.m2dbjava.DetailsActivity">
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDescription"
+        android:textColor="@color/black"
+        android:layout_below="@+id/txtTitreFilm"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+     <TextView
+        android:text=""
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTitreFilm"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/grey"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:background="@color/black"
+        />
+
+    <TextView
+        android:text="Réalisateur"
+        android:layout_width="210dp"
+        android:layout_height="37dp"
+        android:id="@+id/txtReal"
+        android:layout_below="@+id/txtDescription"
+        android:layout_toEndOf="@+id/coverDetails"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/coverDetails" />
+
+    <TextView
+        android:text=""
+        android:layout_width="210dp"
+        android:layout_height="37dp"
+        android:id="@+id/txtNameReal"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_below="@+id/txtReal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text=""
+        android:layout_width="144dp"
+        android:layout_height="75dp"
+        android:id="@+id/txtYear"
+        android:gravity="center"
+        android:layout_below="@+id/txtNameReal"
+        android:layout_alignLeft="@+id/txtNameReal"
+        android:layout_alignStart="@+id/txtNameReal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/coverDetails"
+        android:layout_width="145dp"
+        android:layout_height="227dp"
+        tools:background="#AAA"
+        android:layout_below="@+id/txtDescription"
+        android:layout_toLeftOf="@+id/txtNameReal"
+        android:layout_toStartOf="@+id/txtNameReal" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_below="@+id/txtYear"
+        android:layout_toRightOf="@+id/coverDetails"
+        android:id="@+id/txtType"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:id="@+id/txtDuration"
+        android:layout_below="@+id/txtType"
+        android:layout_toRightOf="@+id/coverDetails"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_below="@+id/txtDescription"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
